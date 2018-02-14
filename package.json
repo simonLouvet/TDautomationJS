@@ -45,7 +45,7 @@
   },
   "scripts": {
     "start": "node bin/wwww",
-    "qualityCheck": "./node_modules/.bin/eslint -f junit -o test.html *.js & exit 0",
+    "qualityCheck": "./node_modules/.bin/eslint -f junit -o eslintResult.xml *.js & exit 0",
     "test": "node node_modules/mocha/bin/mocha --recursive t/unit/*",
     "pretest" : "npm run qualityCheck"
   }
