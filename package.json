@@ -39,7 +39,14 @@
     "validator": "^3.43.0"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.17.0",
+    "mocha": "^5.0.0"
   },
   "scripts": {
+    "start": "node bin/wwww",
+    "qualityCheck": "./node_modules/.bin/eslint -f junit -o test.html *.js & exit 0",
+    "test": "node node_modules/mocha/bin/mocha --recursive t/unit/*",
+    "pretest" : "npm run qualityCheck"
   }
 }
