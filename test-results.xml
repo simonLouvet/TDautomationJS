@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.12300000000000003" tests="43" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-02-14T09:53:48" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Check calendar month object" timestamp="2018-02-14T09:53:48" tests="8" file="/home/sembus/GIT/TDautomationJS/t/unit/calendar.js" failures="0" time="0.038000000000000006">
+    <testcase name="Check calendar month object Normalize provided date to be at the begining of the month" time="0.002" classname="Normalize provided date to be at the begining of the month">
+    </testcase>
+    <testcase name="Check calendar month object Knows on which week day month starts" time="0" classname="Knows on which week day month starts">
+    </testcase>
+    <testcase name="Check calendar month object Knows how many blanks to put before first day of the month" time="0" classname="Knows how many blanks to put before first day of the month">
+    </testcase>
+    <testcase name="Check calendar month object Knows how many blanks to put after the last day of the month" time="0.002" classname="Knows how many blanks to put after the last day of the month">
+    </testcase>
+    <testcase name="Check calendar month object Knows whether day is weekend" time="0.002" classname="Knows whether day is weekend">
+    </testcase>
+    <testcase name="Check calendar month object Knows how to generate data structure for template" time="0.029" classname="Knows how to generate data structure for template">
+    </testcase>
+    <testcase name="Check calendar month object Sanity checks pass" time="0.001" classname="Sanity checks pass">
+    </testcase>
+    <testcase name="Check calendar month object It knows whether day is bank holiday" time="0.002" classname="It knows whether day is bank holiday">
+    </testcase>
+  </testsuite>
+  <testsuite name="Check Email" timestamp="2018-02-14T09:53:48" tests="1" file="/home/sembus/GIT/TDautomationJS/t/unit/email.js" failures="0" time="0.045">
+    <testcase name="Check Email Knows how to render and parse template" time="0.045" classname="Knows how to render and parse template">
+    </testcase>
+  </testsuite>
+  <testsuite name="Check bug when type mismatch happenned" timestamp="2018-02-14T09:53:48" tests="1" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/leave.js" failures="0" time="0.003">
+    <testcase name="Check bug when type mismatch happenned String value of 2 properly used" time="0.003" classname="String value of 2 properly used">
+    </testcase>
+  </testsuite>
+  <testsuite name="leave request half a day with existing booking of half a day" timestamp="2018-02-14T09:53:48" tests="2" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/leave.js" failures="0" time="0.005">
+    <testcase name="leave request half a day with existing booking of half a day clash" time="0.002" classname="clash">
+    </testcase>
+    <testcase name="leave request half a day with existing booking of half a day fit" time="0.003" classname="fit">
+    </testcase>
+  </testsuite>
+  <testsuite name="Leave request is spread through more then one day" timestamp="2018-02-14T09:53:48" tests="6" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/leave.js" failures="0" time="0.004">
+    <testcase name="Leave request is spread through more then one day leave object is instanciated" time="0" classname="leave object is instanciated">
+    </testcase>
+    <testcase name="Leave request is spread through more then one day both ends are full, stick to the start" time="0.002" classname="both ends are full, stick to the start">
+    </testcase>
+    <testcase name="Leave request is spread through more then one day both ends are full, stick to the end" time="0.001" classname="both ends are full, stick to the end">
+    </testcase>
+    <testcase name="Leave request is spread through more then one day ends with part stick to the part start - should fit" time="0.001" classname="ends with part stick to the part start - should fit">
+    </testcase>
+    <testcase name="Leave request is spread through more then one day ends with part, stick to the part start - with clashes" time="0" classname="ends with part, stick to the part start - with clashes">
+    </testcase>
+    <testcase name="Leave request is spread through more then one day start with with part, stick to the full end" time="0" classname="start with with part, stick to the full end">
+    </testcase>
+  </testsuite>
+  <testsuite name="Case when leave request is within one day" timestamp="2018-02-14T09:53:48" tests="5" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/leave.js" failures="0" time="0.01">
+    <testcase name="Case when leave request is within one day Is half and attempt to stick to the half day part so they fit" time="0.003" classname="Is half and attempt to stick to the half day part so they fit">
+    </testcase>
+    <testcase name="Case when leave request is within one day Is half and attempt to stick to the half day part with clashes" time="0.002" classname="Is half and attempt to stick to the half day part with clashes">
+    </testcase>
+    <testcase name="Case when leave request is within one day Is half and attempt to stick to the full day part" time="0.001" classname="Is half and attempt to stick to the full day part">
+    </testcase>
+    <testcase name="Case when leave request is within one day Is full day and attempt to stick it to the half day part" time="0.001" classname="Is full day and attempt to stick it to the half day part">
+    </testcase>
+    <testcase name="Case when leave request is within one day Is full day and attempt to stick it to the full day part" time="0.003" classname="Is full day and attempt to stick it to the full day part">
+    </testcase>
+  </testsuite>
+  <testsuite name="Check get_objects_for_bulk_create" timestamp="2018-02-14T09:53:48" tests="4" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/leave_day.js" failures="0" time="0.004">
+    <testcase name="Check get_objects_for_bulk_create Check case when start and finish dates are the same" time="0.001" classname="Check case when start and finish dates are the same">
+    </testcase>
+    <testcase name="Check get_objects_for_bulk_create Start and end dates are the same, and half day" time="0.003" classname="Start and end dates are the same, and half day">
+    </testcase>
+    <testcase name="Check get_objects_for_bulk_create Two days in a row" time="0" classname="Two days in a row">
+    </testcase>
+    <testcase name="Check get_objects_for_bulk_create Three days in a row with first half day" time="0" classname="Three days in a row with first half day">
+    </testcase>
+  </testsuite>
+  <testsuite name="get_automatic_adjustment method" timestamp="2018-02-14T09:53:48" tests="0" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/user.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Employee start day is in previouse year and no end date" timestamp="2018-02-14T09:53:48" tests="1" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/user.js" failures="0" time="0.001">
+    <testcase name="get_automatic_adjustment method Employee start day is in previouse year and no end date no automatic adjustment" time="0.001" classname="no automatic adjustment">
+    </testcase>
+  </testsuite>
+  <testsuite name="Employee start date is in prevouse year but end date is in current year" timestamp="2018-02-14T09:53:48" tests="1" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/user.js" failures="0" time="0.001">
+    <testcase name="get_automatic_adjustment method Employee start date is in prevouse year but end date is in current year ajustment is made based on end date" time="0.001" classname="ajustment is made based on end date">
+    </testcase>
+  </testsuite>
+  <testsuite name="Employee start date is in previouse year and end date is in next year" timestamp="2018-02-14T09:53:48" tests="1" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/user.js" failures="0" time="0.001">
+    <testcase name="get_automatic_adjustment method Employee start date is in previouse year and end date is in next year ajustment is made based on end date" time="0.001" classname="ajustment is made based on end date">
+    </testcase>
+  </testsuite>
+  <testsuite name="Start date is in current year, no end date" timestamp="2018-02-14T09:53:48" tests="1" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/user.js" failures="0" time="0">
+    <testcase name="get_automatic_adjustment method Start date is in current year, no end date adjustment is made based on start date" time="0" classname="adjustment is made based on start date">
+    </testcase>
+  </testsuite>
+  <testsuite name="Start date is in current year, end date is in current year either" timestamp="2018-02-14T09:53:48" tests="1" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/user.js" failures="0" time="0">
+    <testcase name="get_automatic_adjustment method Start date is in current year, end date is in current year either adjustment is made based on start and end dates" time="0" classname="adjustment is made based on start and end dates">
+    </testcase>
+  </testsuite>
+  <testsuite name="Start date is in current year, end date is in next year" timestamp="2018-02-14T09:53:48" tests="1" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/user.js" failures="0" time="0.001">
+    <testcase name="get_automatic_adjustment method Start date is in current year, end date is in next year adjustment is made based on start date" time="0.001" classname="adjustment is made based on start date">
+    </testcase>
+  </testsuite>
+  <testsuite name="Start date is in next year, no end date" timestamp="2018-02-14T09:53:48" tests="1" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/user.js" failures="0" time="0">
+    <testcase name="get_automatic_adjustment method Start date is in next year, no end date No adjustment is needed" time="0" classname="No adjustment is needed">
+    </testcase>
+  </testsuite>
+  <testsuite name="Start date is in next year, end date is defined" timestamp="2018-02-14T09:53:48" tests="1" file="/home/sembus/GIT/TDautomationJS/t/unit/model/db/user.js" failures="0" time="0">
+    <testcase name="get_automatic_adjustment method Start date is in next year, end date is defined No adjustment is needed" time="0" classname="No adjustment is needed">
+    </testcase>
+  </testsuite>
+  <testsuite name="Check validation for leave request" timestamp="2018-02-14T09:53:48" tests="8" file="/home/sembus/GIT/TDautomationJS/t/unit/validator/leave_request.js" failures="0" time="0.010000000000000002">
+    <testcase name="Check validation for leave request No parameters provided" time="0.004" classname="No parameters provided">
+    </testcase>
+    <testcase name="Check validation for leave request User index is invalid" time="0.001" classname="User index is invalid">
+    </testcase>
+    <testcase name="Check validation for leave request Successfull scenario" time="0.002" classname="Successfull scenario">
+    </testcase>
+    <testcase name="Check validation for leave request from_date_part has invalid value" time="0" classname="from_date_part has invalid value">
+    </testcase>
+    <testcase name="Check validation for leave request from_date has invalid value" time="0.001" classname="from_date has invalid value">
+    </testcase>
+    <testcase name="Check validation for leave request start dates is greater than end one" time="0.001" classname="start dates is greater than end one">
+    </testcase>
+    <testcase name="Check validation for leave request inter_year leave request" time="0.001" classname="inter_year leave request">
+    </testcase>
+    <testcase name="Check validation for leave request Reason is optional" time="0" classname="Reason is optional">
+    </testcase>
+  </testsuite>
+</testsuites>

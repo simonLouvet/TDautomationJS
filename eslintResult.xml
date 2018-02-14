@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+<testsuite package="org.eslint" time="0" tests="3" errors="3" name="/home/sembus/GIT/TDautomationJS/app.js">
+<testcase time="0" name="org.eslint.no-unused-vars"><failure message="&apos;favicon&apos; is assigned a value but never used."><![CDATA[line 4, col 5, Error - &apos;favicon&apos; is assigned a value but never used. (no-unused-vars)]]></failure></testcase>
+<testcase time="0" name="org.eslint.no-unused-vars"><failure message="&apos;next&apos; is defined but never used."><![CDATA[line 162, col 37, Error - &apos;next&apos; is defined but never used. (no-unused-vars)]]></failure></testcase>
+<testcase time="0" name="org.eslint.no-unused-vars"><failure message="&apos;next&apos; is defined but never used."><![CDATA[line 173, col 33, Error - &apos;next&apos; is defined but never used. (no-unused-vars)]]></failure></testcase>
+</testsuite>
+</testsuites>
